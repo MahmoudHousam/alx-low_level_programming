@@ -2,11 +2,10 @@
 
 int main(void){
 
-  char message[] = "abcdefghijklmnopqrstuvwxyz";
-  int i;
-  for (i = 0; i < 26; ++i)
+  char i;
+  for (i = 'a'; i <= 'z'; ++i)
   {
-      _putchar(message[i]);
+      _putchar(i);
   };
   _putchar('\n');
   return 0;
