@@ -12,6 +12,7 @@ int main(void)
 	while (i < 8)
 	{
 		_putchar(message[i]);
+		i++;
 	}
 	_putchar('\n');
 	return (0);
