@@ -54,5 +54,11 @@ int main(void)
 
     // 9-print_fizz_buzz
     print_fizz_buzz();
+
+    // 10-print triangle
+    print_triangle(2);
+    print_triangle(10);
+    print_triangle(1);
+    print_triangle(0);
     return (0);
 }
