@@ -46,5 +46,13 @@ int main(void)
     print_diagonal(5);
     print_diagonal(10);
     print_diagonal(-12);
+
+    // 8-print_square
+    print_square(2);
+    print_square(5);
+    print_square(-3);
+
+    // 9-print_fizz_buzz
+    print_fizz_buzz();
     return (0);
 }

@@ -6,9 +6,16 @@ void print_line(int n)
     char c[] = "_";
     int i;
 
-    for (i = 0; i < n; ++i)
+    if (n > 0)
     {
-        printf("%s", c);
+        for (i = 0; i < n; ++i)
+        {
+            printf("%s", c);
+        }
+    }
+    else
+    {
+        printf("%d is less than or eqal to 0", n);
     }
     printf("\n");
 }
