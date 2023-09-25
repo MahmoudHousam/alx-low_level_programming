@@ -45,7 +45,13 @@ int main(void)
 
     str2 = "I do not fear computers. I fear the lack of them - Isaac Asimov";
     print_rev(str2);
-    return (0);
+
+    // 5-rev_string
+    char s[10] = "My School";
+
+    printf("%s\n", s);
+    rev_string(s);
+    printf("%s\n", s);
 
     return (0);
 }
