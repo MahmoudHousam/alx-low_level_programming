@@ -65,5 +65,15 @@ int main(void)
 
     str3 = "My Name is 7oda";
     puts2(str3);
+
+    // 7-puts_half.c
+    printf("\n7-puts_half\n");
+    char *str4;
+    char *str5;
+
+    str4 = "0123456789";
+    str5 = "01234567891";
+    puts_half(str4);
+    puts_half(str5);
     return (0);
 }
