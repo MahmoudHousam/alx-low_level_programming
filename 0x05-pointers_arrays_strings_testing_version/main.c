@@ -75,5 +75,25 @@ int main(void)
     str5 = "01234567891";
     puts_half(str4);
     puts_half(str5);
+
+    // 8-print_array.c
+    printf("\n8-print_array\n");
+    int array[5];
+
+    array[0] = 98;
+    array[1] = 402;
+    array[2] = -198;
+    array[3] = 298;
+    array[4] = -1024;
+    print_array(array, 5);
+
+    // 9-strcpy.c
+    printf("\n9-strcpy.c\n");
+    char s1[98];
+    char *ptr;
+
+    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
+    printf("%s", s1);
+    printf("%s", ptr);
     return (0);
 }
