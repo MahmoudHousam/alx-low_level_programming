@@ -9,6 +9,7 @@
 int main(void)
 {
     // 0-reset_to_98
+    printf("\n0-reset_to_98\n");
     int n;
 
     n = 402;
@@ -17,6 +18,7 @@ int main(void)
     printf("n=%d\n", n);
 
     // 1-swap
+    printf("\n1-swap\n");
     int a;
     int b;
 
@@ -27,6 +29,7 @@ int main(void)
     printf("a=%d, b=%d\n", a, b);
 
     // 2-strlen
+    printf("\n2-strlen\n");
     char *str;
     int len;
 
@@ -35,23 +38,32 @@ int main(void)
     printf("%d\n", len);
 
     // 3-puts
+    printf("\n3-puts\n");
     char *str1;
 
     str1 = "I do not fear computers. I fear the lack of them - Isaac Asimov";
     _puts(str1);
 
     // 4-print_rev
+    printf("\n4-print_rev\n");
     char *str2;
 
     str2 = "I do not fear computers. I fear the lack of them - Isaac Asimov";
     print_rev(str2);
 
     // 5-rev_string
+    printf("\n5-rev-string\n");
     char s[10] = "My School";
 
     printf("%s\n", s);
     rev_string(s);
     printf("%s\n", s);
 
+    // 6-puts2
+    printf("\n6-puts2\n");
+    char *str3;
+
+    str3 = "My Name is 7oda";
+    puts2(str3);
     return (0);
 }

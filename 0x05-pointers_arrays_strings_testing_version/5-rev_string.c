@@ -1,16 +1,26 @@
 #include "main.h"
 #include <stdio.h>
 
-char rev_string(char *s)
+void rev_string(char *s)
 {
-    int i;
-    int len;
-    len = 0;
-
-    for (i = 0; s[i] != '\0'; i++)
+    if (s == NULL)
+    {
+        printf("Don't pass an empty string");
+    }
+    int len = 0;
+    while (s[len] != '\0')
     {
         len++;
     }
 
-    printf("\n");
+    char *ptr_start = s;
+    char *ptr_end = s + len - 1;
+    while (ptr_start < ptr_end)
+    {
+        char temp = *ptr_start;
+        *ptr_start = *ptr_end;
+        *ptr_end = temp;
+        ptr_start++;
+        ptr_end--;
+    }
 }
