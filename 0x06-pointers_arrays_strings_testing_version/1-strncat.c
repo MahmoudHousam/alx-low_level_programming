@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
     int i = 0;
     int k = 0;
@@ -12,7 +12,10 @@ char *_strcat(char *dest, char *src)
     }
     while (src[k] != '\0')
     {
-        dest[i + k] = src[k];
+        if (k <= n)
+        {
+            dest[i + k] = src[k];
+        }
         k++;
     }
     return (dest);
