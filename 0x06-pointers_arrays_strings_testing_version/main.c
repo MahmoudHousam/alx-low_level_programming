@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
+void print_array(int *a, int n);
+
 int main(void)
 {
 
@@ -65,5 +67,39 @@ int main(void)
         printf("0x%02x", s5[i]);
     }
     printf("\n");
+
+    // 3-strcmp
+    printf("\n3-strcmp\n");
+    char s6[] = "Hello";
+    char s7[] = "World!";
+
+    printf("%d\n", _strcmp(s6, s7));
+    printf("%d\n", _strcmp(s7, s6));
+    printf("%d\n", _strcmp(s6, s6));
+
+    // 4-rev_array
+    printf("\n4-rev_array\n");
+    int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
+
+    print_array(a, sizeof(a) / sizeof(int));
+    reverse_array(a, sizeof(a) / sizeof(int));
+    print_array(a, sizeof(a) / sizeof(int));
     return (0);
+}
+
+void print_array(int *a, int n)
+{
+    int i;
+
+    i = 0;
+    while (i < n)
+    {
+        if (i != 0)
+        {
+            printf(", ");
+        }
+        printf("%d", a[i]);
+        i++;
+    }
+    printf("\n");
 }
