@@ -84,6 +84,15 @@ int main(void)
     print_array(a, sizeof(a) / sizeof(int));
     reverse_array(a, sizeof(a) / sizeof(int));
     print_array(a, sizeof(a) / sizeof(int));
+
+    // 5-string_toupper
+    printf("\n5-string_toupper\n");
+    char str[] = "Look up!\n";
+    char *ptr4;
+
+    ptr = string_toupper(str);
+    printf("%s", ptr4);
+    printf("%s", str);
     return (0);
 }
 
